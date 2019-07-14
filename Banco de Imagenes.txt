@@ -1,0 +1,17 @@
+Mantenimientos tipo ABC:
+
+	* catalogoegresos.//
+	* categoria.//
+	* descuento.//
+	* formapago.//
+	* login.//
+	* tipocliente.//
+	* tipocombustible.//
+	* tipocompra.//
+	* tipodocumento.//
+	* tipogasto.//
+	* tipoventa.//
+
+Modilos:
+	* Proveedor.//
+	* gasto.//

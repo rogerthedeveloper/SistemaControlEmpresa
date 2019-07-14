@@ -1,0 +1,11 @@
+Consulta de MISCELANEA:
+
+** Devuelve los 5 productos mas comprados:
+	SELECT dv.idproducto, p.nombre, COUNT(dv.idproducto), SUM(dv.cantidad) AS TOTAL
+    FROM venta AS v
+    INNER JOIN detalle_venta as dv ON dv.idventa = v.idventa
+    INNER JOIN producto AS p ON p.idproducto = dv.idproducto
+    WHERE v.fecha BETWEEN '2018-05-01' AND '2018-05-31'
+    GROUP BY dv.idproducto
+    ORDER BY TOTAL DESC
+    LIMIT 5
